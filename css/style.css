@@ -1,0 +1,220 @@
+.hover:hover{
+	background-color: #eee !important ;
+}
+
+#container{
+	position: relative;
+	width: 100%;
+	background: -webkit-linear-gradient(left,#354ABF,#3994D6);
+	background: -moz-linear-gradient(left,#354ABF,#3994D6);
+	background: -o-linear-gradient(left,#354ABF,#3994D6);
+	background: -ms-linear-gradient(left,#354ABF,#3994D6);
+	background: linear-gradient(left,#354ABF,#3994D6);
+	margin-top: -20px;
+	padding: 10% 0%;
+}
+
+#text{
+	text-align: center;
+	margin-top: -30px;
+	margin-bottom: 30px;
+	font-family: "High Tower Text";
+	font-size: 30px;
+	color: #fff;
+	font-weight: bold;
+}
+
+#pin{
+	width: 100%;
+	cursor: pointer;
+	margin: 0;
+	padding: 0;
+}
+
+.imgNav{
+	width: 100%;
+	margin: 0 !important;
+	padding: 0!important;
+}
+
+.imgNav li{
+	width: 30%;
+	font-size: 50px;
+	text-align: center;
+	color: #7CB855;
+	padding: 0% 16%;
+}
+
+#mapButton{
+	position: relative;
+	width: 25%;
+	margin: 0% 38%;
+	outline: none;
+	border: none;
+	padding: 5px 0px;
+	font-family: "High Tower Text";
+	background-color: #00ADB5;
+	font-size: 20px;
+	color: #FFF;
+}
+
+.imgNav li h4{
+	color: #fff !important;
+	text-align: left !important;
+}
+
+#h3{
+	position: relative;
+	top: 20px;
+	margin: 0;
+	text-align: center;
+	color: #387ADF;
+	font-weight: bold;
+}
+
+#svgContainer{
+	width: 100%;
+	height: 640px;
+	position: relative;
+	background: -webkit-linear-gradient(left,#469B4C,#B7E576);
+	background: -moz-linear-gradient(left,#469B4C,#B7E576);
+	background: -o-linear-gradient(left,#469B4C,#B7E576);
+	background: -ms-linear-gradient(left,#469B4C,#B7E576);
+	background: linear-gradient(left,#469B4C,#B7E576);
+}
+
+#svgImg{
+	position: relative;
+	width: 50%;
+	height: 540px;
+	border: solid rgba(204,204,204,0.9);
+	border-radius: 10px;
+	margin: 0 auto;
+	top: 40px;
+	background-color: #000;
+	box-shadow: 0 0 15px rgba(153,153,153,0.75);
+}
+
+#innerSvg{
+	position: relative;
+	width: 80%;
+	height: 340px;
+	background-color: #fff;
+	margin: 0 auto;
+	margin-top: 15px;
+	border-radius: 10px;
+	border: 2px solid rgba(204,204,204,0.75);
+	box-shadow: 0 0 15px rgba(153,153,153,0.75);
+}
+
+#innerSvg h3{
+	text-align: center;
+	font-family: "High Tower Text";
+	color: #4531B1;
+	font-weight: bold;
+}
+
+#info{
+	width: 80%;
+	margin: 0 auto;
+	font-size: 20px;
+	font-family: 'monospace';
+	color: #2B2E4A;
+}
+
+#addressName{
+	text-align: center;
+}
+
+#mapContainer{
+	width: 100%;
+	height: 600px;
+	background: -webkit-linear-gradient(left,#BF5CAA,#D59DC5);
+	background: -moz-linear-gradient(left,#BF5CAA,#D59DC5);
+	background: -o-linear-gradient(left,#BF5CAA,#D59DC5);
+	background: -ms-linear-gradient(left,#BF5CAA,#D59DC5);
+	background: linear-gradient(left,#BF5CAA,#D59DC5);	
+	font-family: "Terminal" !important;
+}
+
+#map{
+	position: relative;
+	width: 80%;
+	height: 500px;
+	margin: 0 auto;
+	background-color: #fff;
+	top: 70px;
+	border-radius: 10px;
+}
+
+@media screen and (max-width: 500px) {
+    #svgImg{
+    	width: 100%;
+    	height: 400px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #innerSvg{
+    	margin-top: 50px;
+    }
+}
+
+.loader,
+.loader:before,
+.loader:after {
+  background: #ffffff;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+.loader {
+  text-indent: -9999em;
+  margin: 88px auto;
+  position: relative;
+  font-size: 11px;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+.loader:after {
+  left: 1.5em;
+}
+@-webkit-keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #000;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #000;
+    height: 5em;
+  }
+}
+@keyframes load1 {
+  0%,
+  80%,
+  100% {
+    box-shadow: 0 0 #000;
+    height: 4em;
+  }
+  40% {
+    box-shadow: 0 -2em #000;
+    height: 5em;
+  }
+}

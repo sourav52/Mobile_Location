@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Geolocation On FingerTip</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="#">LocateMe</a>
+	    </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav">
+	        <li class="hover"><a href="#">Sign In <span class="sr-only">(current)</span></a></li>
+	        <li class="hover"><a href="#">Sign Up</a></li>
+	        <li class="dropdown">
+	          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Other <span class="caret"></span></a>
+	          <ul class="dropdown-menu">
+	            <li class="hover"><a href="#">View on Google Map</a></li>
+	            <li class="hover"><a href="#">View on Here Map</a></li>
+	            <li class="hover"><a href="#">About App</a></li>
+	            <li class="hover"><a href="#">Credit</a></li>
+	          </ul>
+	        </li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<section id="container">
+		<div id="text">Click & Find Position</div>
+		<div id="pin">
+			<ul class="imgNav" >
+				<li class="glyphicon glyphicon-map-marker" title="Find Your Position" id="getPos">
+					<h4>Get Position</h4>
+				</li>
+				<li class="glyphicon glyphicon-eye-open" title="Watch Your Position" id="watchPos">
+					<h4>Watch Position</h4>
+				</li>
+				<li class="glyphicon glyphicon-eye-close" title="Clear Watch" id="clearWatch">
+					<h4>Clear Watch</h4>
+				</li>
+			</ul>
+		</div>
+	</section>
+	<section id="svgContainer">
+		<h3 id="h3">Your Current Position</h3>
+		<div id="svgImg">
+			<div id="innerSvg"></div>
+			<button id="mapButton" >View Map</button>
+		</div>
+	</section>
+	<section id="mapContainer">
+		<div id="map"></div>
+	</section>
+</body>
+<script type="text/javascript"src="js/jquery.js"></script>
+<script type="text/javascript"src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script type="text/javascript" src="js/location.js"></script>
+</html>
